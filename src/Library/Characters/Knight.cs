@@ -11,17 +11,17 @@ namespace RoleplayGame
 
         public string Name { get; set; }
 
-        public Sword Sword { get; set; }
+        public Sword sword { get; set; }
 
-        public Shield Shield { get; set; }
+        public Shield shield { get; set; }
 
-        public Armor Armor { get; set; }
+        public Armor armor { get; set; }
 
         public int AttackValue
         {
             get
             {
-                return Sword.AttackValue;
+                return sword.AttackValue;
             }
         }
 
@@ -29,7 +29,7 @@ namespace RoleplayGame
         {
             get
             {
-                return Armor.DefenseValue + Shield.DefenseValue;
+                return armor.DefenseValue + shield.DefenseValue;
             }
         }
 

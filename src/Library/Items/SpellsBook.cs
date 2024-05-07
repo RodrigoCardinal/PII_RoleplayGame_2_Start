@@ -4,14 +4,14 @@ namespace RoleplayGame
 {
     public class SpellsBook
     {
-        public Spell[] Spells { get; set; }
+        public Spell[] spells { get; set; }
         
         public int AttackValue
         {
             get
             {
                 int value = 0;
-                foreach (Spell spell in this.Spells)
+                foreach (Spell spell in this.spells)
                 {
                     value += spell.AttackValue;
                 }
@@ -24,7 +24,7 @@ namespace RoleplayGame
             get
             {
                 int value = 0;
-                foreach (Spell spell in this.Spells)
+                foreach (Spell spell in this.spells)
                 {
                     value += spell.DefenseValue;
                 }

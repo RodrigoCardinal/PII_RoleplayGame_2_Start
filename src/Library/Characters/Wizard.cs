@@ -11,15 +11,15 @@ namespace RoleplayGame
 
         public string Name { get; set; }
 
-        public SpellsBook SpellsBook { get; set; }
+        public SpellsBook spellsBook { get; set; }
 
-        public Staff Staff { get; set; }
+        public Staff staff { get; set; }
 
         public int AttackValue
         {
             get
             {
-                return SpellsBook.AttackValue + Staff.AttackValue;
+                return spellsBook.AttackValue + staff.AttackValue;
             }
         }
 
@@ -27,7 +27,7 @@ namespace RoleplayGame
         {
             get
             {
-                return SpellsBook.DefenseValue + Staff.DefenseValue;
+                return spellsBook.DefenseValue + staff.DefenseValue;
             }
         }
 
